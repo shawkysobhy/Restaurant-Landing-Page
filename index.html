@@ -2,33 +2,39 @@
 <html lang="en">
 
 <head>
-  <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/res.css">
+  <script defer src="./app/main.js"></script>
   <title>Omni Food</title>
 </head>
 
 <body>
-  <header>
+  <header class="">
     <a href="">
       <img class="logo" alt="website logo" src="./assets/omnifood-logo.png" />
     </a>
 
-    <nav class="main-nav">
+    <nav class="main-nav ">
       <ul class="main-nav-container">
         <li><a class="main-nav-link" href="#">How it works</a></li>
         <li><a class="main-nav-link" href="#">Meals</a></li>
-        <li><a class="main-nav-link" href="#">Testimonials</a>></li>
+        <li><a class="main-nav-link" href="#">Testimonials</a></li>
         <li><a class="main-nav-link" href="#">Pricing</a></li>
         <li><a class="main-nav-btn" href="#">Try For Free !</a></li>
       </ul>
     </nav>
+    <button class="main-nav-mobile">
+      <ion-icon class=" icon-mobile-nav menu-icon "name="menu-outline" id="menu-icon"></ion-icon>
+      <ion-icon class=" icon-mobile-nav close-icon" name="close-outline" id="close-icon"></ion-icon>
+    </button>
   </header>
   <main>
     <section class="section-hero">
@@ -254,7 +260,7 @@
         </div>
       </div>
       <div class="testimonials-gallery">
-        <div class="food-gallery grid grid--3-col ">
+        <div class="food-gallery grid  ">
           <div>
             <img src="./assets/gallery/gallery-7.jpg" alt="food image">
           </div>
